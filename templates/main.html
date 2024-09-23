@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plant Disease Prediction App">
+    <meta name="keywords" content="Plant Disease, Prediction, AI, Deep Learning">
+    <meta name="author" content="Your Name">
+    
+    <title>Plant Disease Prediction</title>
+
+    <!-- Linking Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Linking external CSS (e.g., FontAwesome for icons, custom CSS for styles) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Plant Disease Prediction App</h1>
+    </header>
+
+    <!-- Showcase Section -->
+    <section id="showcase">
+        <div class="container">
+            <h2>Detect Plant Diseases with AI</h2>
+            <p>Upload a plant image and predict possible diseases with our AI-powered system.</p>
+            <a href="#upload" class="button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Learn More Section -->
+    <section class="learn-more">
+        <h3>How It Works</h3>
+        <p>Our Plant Disease Prediction App uses state-of-the-art deep learning algorithms to analyze images of plants 
+           and detect diseases. Simply upload a photo, and the AI model will provide a prediction of the disease 
+           along with recommendations.</p>
+
+        <!-- Icons to illustrate key features -->
+        <div>
+            <i class="fa fa-brain"></i>
+            <i class="fa fa-leaf"></i>
+            <i class="fa fa-camera"></i>
+        </div>
+    </section>
+
+    <!-- Image Upload Section -->
+    <section id="upload" class="container">
+        <h3>Upload Your Plant Image</h3>
+        <form method="POST" action="/predict" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <br><br>
+            <input type="submit" class="button" value="Predict Disease">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Plant Disease Prediction | Designed by George</p>
+    </footer>
+
+</body>
+</html>

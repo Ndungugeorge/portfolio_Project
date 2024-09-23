@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Tomato Leaf Disease Prediction</title>
+
+    <style>
+        body {
+            background-image: url('{{ url_for("static", filename="images/Back.jpg") }}');
+            background-size : cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+            width: 100%;
+            height: auto;
+        }
+
+        .content-h1 {
+            background-color: #0f0f0f;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .details h4 {
+            margin-top: 20px;
+        }
+
+        .learn-more {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Title -->
+        <div class="text-center my-5">
+            <h1>Predicted Tomato Leaf Disease & Treatments</h1>
+        </div>
+
+        <!-- Image and Prediction Section -->
+        <div class="row mb-5">
+            <div class="col-md-6 text-center">
+                <span class="border border-primary">
+                    <img src="{{ url_for('static', filename='images/Tomato___Bacterial_spot.JPG') }}" alt="Predicted Tomato Leaf Disease" class="img-fluid">
+                </span>
+            </div>
+
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1 class="content-h1 text-center">{{ pred_output }}</h1>
+                    <div class="details mt-4">
+                        <h4><strong>Treatment:</strong></h4>
+                        <p>Copper fungicides are the most commonly recommended treatment for bacterial leaf spot. Apply copper fungicide as a preventive measure before moving the plants to their permanent location. In case of symptoms, spray with copper fungicide for a 7-10 day period and repeat weekly after transplanting. Continue treatments every 10 days in dry weather and every 5-7 days during rainy weather.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learn More Section -->
+        <div class="learn-more mt-5">
+            <h2 class="text-center mb-4">Learn More About Tomato Diseases</h2>
+            <p>Tomato plants are susceptible to many diseases. Understanding the symptoms of each disease helps in identifying the right treatment. Explore more about common tomato plant diseases like:</p>
+
+            <div class="text-center mt-4">
+                <a href="https://www.gardeningknowhow.com" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js" integrity="sha384-7RRMfpppTlVfqA7x91CSBObpZRJtA7lp55hOz9I/iEv0Y2JtTGA9uC/QjxF06izB" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEw8T2vQKN7/70qyUFTNL5dcvEga7gOqa7IQqZp6z78JqD6eSAx2rmnW1dnFrx5" crossorigin="anonymous"></script>
+</body>
+
+</html>
