@@ -22,3 +22,5 @@ View the disease diagnosis and recommended treatment.
 #Author
 George Mwaura
 
+#screenshot
+![front-end](image-1.png)
