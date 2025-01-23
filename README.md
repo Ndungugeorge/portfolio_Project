@@ -1,4 +1,4 @@
-# Tomato Leaf Disease Prediction
+# plant Disease Prediction App
 A Flask-based web application that uses deep learning to classify tomato leaf diseases from images. The model identifies various diseases and suggests treatments, helping farmers maintain healthy crops.
 
 # Project Overview
